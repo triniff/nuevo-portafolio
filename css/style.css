@@ -1,0 +1,116 @@
+body {
+  font-family: 'Raleway', sans-serif; }
+
+/* HEADER */
+header {
+  height: 56px;
+  position: relative;
+  /* NAV */ }
+  header .navbar {
+    float: right;
+    background-color: #fff; }
+    header .navbar ul li {
+      display: flex;
+      align-self: center; }
+    header .navbar ul .social-network {
+      display: flex;
+      margin-left: 40px; }
+      @media (max-width: 991px) {
+        header .navbar ul .social-network {
+          display: flex;
+          justify-content: space-evenly; } }
+    header .navbar .active > .nav-link {
+      color: #88b1c3 !important; }
+  header .nav-item img {
+    width: 30px;
+    opacity: 0.4; }
+    header .nav-item img:hover {
+      opacity: 0.7; }
+
+.breadcrumbs {
+  padding-top: 24px; }
+  .breadcrumbs ul li {
+    display: inline-block; }
+    .breadcrumbs ul li a {
+      text-decoration: none;
+      color: #88b1c3; }
+      .breadcrumbs ul li a:hover {
+        color: #0397d6;
+        text-decoration: underline; }
+
+@media (max-width: 991px) {
+  /*Estilos sidenav menu*/
+  .navbar {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    float: inherit !important;
+    justify-content: flex-end; }
+
+  ul.navbar-nav.mr-auto {
+    padding: 30px;
+    text-align: center; }
+
+  .navbar-nav .nav-link {
+    padding: 15px 0px; } }
+/* SECCION ABOUT */
+.about {
+  padding: 60px 40px;
+  color: #444444; }
+  .about p {
+    color: #828282; }
+  .about.home-about {
+    margin-top: 10%; }
+  .about .line {
+    width: 50px;
+    height: 3px;
+    background: #444444;
+    margin: 10px 0px; }
+
+/* GALLERY */
+.gallery-porfolio .gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50vh;
+  padding: 0px 40px; }
+  .gallery-porfolio .gallery-wrap a {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50vh;
+    flex: 1; }
+    .gallery-porfolio .gallery-wrap a:hover {
+      flex: 7; }
+    .gallery-porfolio .gallery-wrap a .item {
+      flex: 1;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: none;
+      transition: flex 0.8s ease; }
+      .gallery-porfolio .gallery-wrap a .item:hover {
+        flex: 7; }
+      .gallery-porfolio .gallery-wrap a .item-1 {
+        background-image: url("../img/animal-art-background-1050309.jpg"); }
+      .gallery-porfolio .gallery-wrap a .item-2 {
+        background-image: url("../img/alarm-clock-art-background-1037993.jpg"); }
+      .gallery-porfolio .gallery-wrap a .item-3 {
+        background-image: url("../img/adult-hand-cream-hands-1029896.jpg"); }
+      .gallery-porfolio .gallery-wrap a .item-4 {
+        background-image: url("../img/abstract-art-background-1037999.jpg"); }
+      .gallery-porfolio .gallery-wrap a .item-5 {
+        background-image: url("../img/beauty-conceptual-nail-polish-1029894.jpg"); }
+      .gallery-porfolio .gallery-wrap a .item-6 {
+        background-image: url("../img/background-color-conceptual-1055336.jpg"); }
+      .gallery-porfolio .gallery-wrap a .item-7 {
+        background-image: url("../img/arms-background-bang-1076813.jpg"); }
+      .gallery-porfolio .gallery-wrap a .item-8 {
+        background-image: url("../img/analog-art-beautiful-963486.jpg"); }
+      @media (max-width: 991px) {
+        .gallery-porfolio .gallery-wrap a .item {
+          height: 400px; } }
+  @media (max-width: 991px) {
+    .gallery-porfolio .gallery-wrap {
+      display: grid;
+      height: 800px; } }
+
+/*# sourceMappingURL=style.css.map */
