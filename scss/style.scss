@@ -3,6 +3,7 @@
 
 body{
     font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
 }
 
 /* HEADER */
@@ -20,15 +21,25 @@ header{
             }
             .social-network {
                 display: flex;
-                margin-left: 40px;
                 @media (max-width: 991px){
                     display: flex;
                     justify-content: space-evenly;
+                    margin-left: 0px;
                 }
             }
         }
         .active>.nav-link{
-            color: #88b1c3 !important;
+            color: $azul-oscuro-link !important;
+        }
+        .line-nav{
+            height: 30px;
+            margin-top: 7px;
+            width: 2px;
+            margin: 7px 40px 0px 40px;        
+            background-color: $gris-claro;
+            @media (max-width: 991px){
+                display: none;
+            }
         }
     }
     .nav-item{
@@ -95,65 +106,102 @@ header{
 }
 
 
-/* GALLERY */
+
+/*  PORTAFOLIO  */
 .gallery-porfolio{
     .gallery-wrap {
         display: flex;
         flex-direction: row;
         width: 100%;
         height: 50vh;
-        padding: 0px 40px;
-        a{
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            height: 50vh;
-            flex: 1;
-            &:hover {
-                flex: 7;
-            }
-            .item {
-                flex: 1;
-                height: 100%;
-                background-position: center;
-                background-size: cover;
-                background-repeat: none;
-                transition: flex 0.8s ease;
-                &:hover {
-                    flex: 7;
-                }
-                &-1{
-                    background-image: url("../img/animal-art-background-1050309.jpg");
-                }
-                &-2{
-                    background-image: url("../img/alarm-clock-art-background-1037993.jpg");
-                }
-                &-3{
-                    background-image: url("../img/adult-hand-cream-hands-1029896.jpg");
-                }
-                &-4{
-                    background-image: url("../img/abstract-art-background-1037999.jpg");
-                }
-                &-5{
-                    background-image: url("../img/beauty-conceptual-nail-polish-1029894.jpg");
-                }
-                &-6{
-                    background-image: url("../img/background-color-conceptual-1055336.jpg");
-                }
-                &-7{
-                    background-image: url("../img/arms-background-bang-1076813.jpg");
-                }
-                &-8{
-                    background-image: url("../img/analog-art-beautiful-963486.jpg");
-                }
-                @media (max-width: 991px){ 
-                    height: 400px;   
+        padding: 10px 40px;
+        @media (max-width: 1032px){ 
+            height: auto !important;
+            display: block !important;
+        }
+      }
+      a{
+        opacity: 0;
+        text-decoration: none;
+        color: $blanco;
+        position: absolute;
+        right: 45%;
+        top: 23%;
+        font-size: 150px;
+        text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.35);
+     }
+      .item {
+        flex: 1;
+        height: 100%;
+        width: 100%;
+        background-position: top;
+        background-size: cover;
+        background-repeat: none;
+        transition: flex 0.8s ease;
+        position: relative;
+        opacity: 0.6;
+        &:hover{
+          flex: 7;
+            a {
+                opacity: 1;
+                &:hover{
+                    color: $azul-oscuro-link !important;
                 }
             }
+            opacity: 1;
         }
-        @media (max-width: 991px){ 
-            display: grid;
-            height: 800px;        
+        &-1{
+            background-image: url("../img/vota-inteligente/proyect-1.1.png");
         }
+        &-2{
+            background-image: url("../img/build-in/proyect-2.0.jpg");
+        }
+        &-3{
+            background-image: url("../img/barrio-yungay/proyect-3.2.png");
+        }
+        &-4{
+            background-image: url("../img/fonohabilita/proyect-4.0.jpg");
+        }
+        &-5{
+            background-image: url("../img/blackgnome/proyect-6.0.png");
+        }
+        &-6{
+            background-image: url("../img/birdgym/proyect-6.0.png");
+        }
+        &-7{
+            background-image: url("../img/giveandtake/proyect-5.1.jpg");
+        }
+        &-8{
+            background-image: url("../img/giveandtake/proyect-5.1.jpg");
+        }
+        @media (max-width: 1032px){ 
+            height: 400px;
+            flex: none !important;
+            display: inline-block !important;
+            width: 49%;
+            opacity: 0.8;
+            a{
+                opacity: 1 !important;
+                color: $azul-oscuro-link !important;
+            }
+            @media (max-width:690px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+.gallery-photo{
+    img {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        padding: 24px 0px;
+    }
+    .img-90{
+        width: 90% !important;
+        padding-bottom: 40px;
     }
 }
