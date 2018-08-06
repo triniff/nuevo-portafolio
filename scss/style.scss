@@ -87,9 +87,10 @@ header{
 }
 
 /* SECCION ABOUT */
-.about{
+%about{
     padding: 60px 40px;
     color: $gris-oscuro;
+    width: 100%;
     p{
         color: $gris-claro;
     }
@@ -101,11 +102,35 @@ header{
         height: 3px;
         background: $gris-oscuro;
         margin: 10px 0px;
-    }
-        
+    } 
 }
-
-
+.about{
+    @extend %about;
+}
+.home-about{
+    @extend %about;
+    height: 120vh;
+    position: relative;
+    display: flex;
+    .textos-about{
+        width: 40%;
+        display: inline-block;
+        align-self: center;
+    }
+    /* Imagen home */
+    .img-portafolio-index{
+        width: 60%;
+        height: 600px;
+        position: relative;
+        display: inline-block;
+        img{
+            width: 100%;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+    }
+}
 
 /*  PORTAFOLIO  */
 .gallery-porfolio{
