@@ -94,9 +94,6 @@ header{
     p{
         color: $gris-claro;
     }
-    &.home-about{
-        margin-top: 10%;
-    }
     .line {
         width: 50px;
         height: 3px;
@@ -107,19 +104,26 @@ header{
 .about{
     @extend %about;
 }
+.about-contacto{
+    text-align: center;
+    width: 100%;
+    img{
+        width: 40%;
+    }
+}
 .home-about{
     @extend %about;
     height: 120vh;
     position: relative;
     display: flex;
     .textos-about{
-        width: 40%;
+        width: 50%;
         display: inline-block;
         align-self: center;
     }
     /* Imagen home */
     .img-portafolio-index{
-        width: 60%;
+        width: 50%;
         height: 600px;
         position: relative;
         display: inline-block;
