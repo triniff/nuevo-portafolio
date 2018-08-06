@@ -139,7 +139,7 @@ header{
         background-repeat: none;
         transition: flex 0.8s ease;
         position: relative;
-        opacity: 0.6;
+        opacity: 0.8;
         &:hover{
           flex: 7;
             a {
@@ -154,19 +154,19 @@ header{
             background-image: url("../img/vota-inteligente/proyect-1.1.png");
         }
         &-2{
-            background-image: url("../img/build-in/proyect-2.0.jpg");
+            background-image: url("../img/giveandtake/presentacion.png");
         }
         &-3{
-            background-image: url("../img/barrio-yungay/proyect-3.2.png");
+            background-image: url("../img/cinemark/presentacion.png");
         }
         &-4{
-            background-image: url("../img/fonohabilita/proyect-4.0.jpg");
+            background-image: url("../img/blackgnome/Mesa\ de\ trabajo\ 1.png");
         }
         &-5{
-            background-image: url("../img/blackgnome/proyect-6.0.png");
+            background-image: url("../img/build-in/proyect-2.0.jpg");
         }
         &-6{
-            background-image: url("../img/birdgym/proyect-6.0.png");
+            background-image: url("../img/barrio-yungay/proyect-3.1.png");
         }
         &-7{
             background-image: url("../img/giveandtake/proyect-5.1.jpg");
@@ -198,10 +198,25 @@ header{
         display: block;
         width: 70%;
         margin: 0 auto;
-        padding: 24px 0px;
+        padding: 0px;
     }
     .img-90{
         width: 90% !important;
         padding-bottom: 40px;
+    }
+    @media (max-width: 1032px){
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.video-vimeo{
+    margin: 0 auto;
+    text-align: center;
+    @media (max-width: 640px) {
+        iframe{
+            width: 100%;
+        }
     }
 }
